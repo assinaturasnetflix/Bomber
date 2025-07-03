@@ -54,7 +54,8 @@ let stopSending = false; // Flag para solicitar a parada do envio
 
 async function connectToWhatsApp() {
     // `useMultiFileAuthState` salva a sessão (credenciais) em arquivos para não precisar escanear o QR code toda vez
-    const { state, saveCreds } = await useMultiFileAuthState('auth_info_baileys');
+    // LINHA CORRIGIDA
+const { state, saveCreds } = await useMultiFileAuthState('/tmp/auth_info_baileys');
     
     sock = makeWASocket({
         logger: pino({ level: 'silent' }), // 'silent' para não poluir o console com logs do Baileys
