@@ -1,0 +1,20 @@
+{
+  "name": "whatsapp-mass-sender",
+  "version": "1.0.0",
+  "description": "Bot para envio em massa no WhatsApp com fins educacionais.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1",
+    "pino": "^9.2.0",
+    "socket.io": "^4.7.5"
+  }
+}
